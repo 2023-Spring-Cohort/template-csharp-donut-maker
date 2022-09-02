@@ -3,9 +3,9 @@
 You have been contracted by Fred the Baker Baking Company to take a concept, Donut Maker Clicker, from the drawing board to the browser. Fred the Baker is tired of making real donuts and is ready to retire. He needs our help to keep his love of donuts alive. He wants you to create a game that uses button clicks to create virtual donuts for the world to enjoy. But all those early mornings of donut making may have tired out his brain because he has some strange requirements for 'Auto Clickers' and 'Donut Multipliers'. Unfortunately, it's always "Time to make the Donuts" and Fred is too busy to give us guidance on how to implement these requirements.
 
 ## The Application Requirements
-You must create a website that uses button clicks to create donuts. The donuts can be used as currency to buy Auto Clickers and Donut Multipliers, which will be used to make even more donuts!
+You must create a website that uses button clicks to create donuts. The donuts can be used as currency to buy Auto Clickers and Donut Multipliers, which will be used to make even more donuts! Let's get into the vocab and math, then we will break this down into smaller parts!
 
-## Terminology
+## Terminology 
 **Donut Count**
 The number of Donuts you have created by clicking, either manually or with an Auto Clicker.
 
@@ -65,53 +65,11 @@ The number of donuts required to purchase a Donut Multiplier. Starting value is 
 
 ... you get the picture
 
-## Index.Html Setup
-- Create a Header section
-   - Contains a navigation menu that when clicked will expand sections about:
-      - Fred the Baker Baking Company
-      - The inspiration for this game, Cookie Clicker
-      - Link to your GitHub account (and any other personal links you want to put in, such as LinkedIn)  
-Create a Main section that contains:
-- A section that handles a click
-   - Contains a button that can be clicked to make donuts.
-   - Displays the amount of Donuts made.
-- A section that interacts with the AutoClicker
-   - Displays the amount of Auto Clickers purchased.
-   - Provides a button to purchase Auto Clickers.
-   - Button is disabled when you do not have enough Donuts to buy an Auto Clicker.
-- A section that interacts with the ClickMultiplier
-   - Displays the amount of Donut Multipliers purchased.
-   - Provides a button to purchase Donut Multiplier.
-   - Button is disabled when you do not have enough Donuts to buy a Donut Multiplier.
-
-## Donut Maker Functions
-Create functions in your DonutMaker class that perform the following actions:
-
-- Adds a donut to the Donut Count for every button click
-- Returns the Donut Count
-- Purchases Auto Clickers with donuts
-- Checks whether you have enough donuts to purchase an Auto Clicker
-- Increases the count of Auto Clickers with each purchase of an Auto Clicker
-- Increases Auto Clicker cost with each purchase of an Auto Clicker
-- Activates the Auto Clicker by applying clicks every second based on the Auto Clicker count
-- Purchases Donut Multipliers with donuts
-- Checks whether you have enough donuts to purchase a Donut Multiplier
-- Increases Donut Multiplier cost with each purchase of a Donut Multiplier
-- Increases the count of Donut Multipliers with each purchase of an Donut Multiplier
-- Calculates the number of donuts earned with each click based on the count of Donut Multipliers
-- Resets the game state. This action should reset the game to zero donuts, zero Auto Clickers, and zero Donut Multipliers.
-
-## Additional Requirements
-Use semantic html and BEM when writing your html so that in the future we have a solid base to expand upon.
-Donuts are usually round, but the way in which you round your donut calculations is up to you!
-
 ## Iterations
-Whew...I need a donut after all that information! Don't worry, we are going to break it all down into iterations and features and tackle them one by one. After all, how do you eat an entire box of donuts? One donut at a time, of course.
-
-Each iteration will focus on building out a part of the game. The first iterations will focus on the logic that is needed to have a game. The latter will take us into linking the JavaScript into our website.
+Ok! Now that we have all our vocab and math defined, let's take this step by step. Each iteration will focus on building out a part of the game. The first iterations will focus on the logic that is needed to have a game. The latter will take us into linking the JavaScript into our website.
 
 ### Iteration 1
-This iteration covers project setup and starting the creation of the game. Our first iterations are going to focus on the logic that is needed to have a game. The JavaScript for this iteration will be solely in a DonutMaker.js file and not pertain to the html page. We need to code some behavior before we can code the way the user interacts with the project.
+This iteration covers project setup and starting the creation of the game. Our first iterations are going to focus on the logic that is needed to have a game. The JavaScript for this iteration will be solely in a DonutMaker.js file and not pertain to the html page. We need to code some behavior before we can code the way the user interacts with the project. Console.log() is your friend! Check your values as you are creating your variables and functions. Please talk with an instructor if you are having trouble with this process. We're here to help!
 
 **FEATURE 1 : Have a way to count donuts.**
 > As a user, I want to know how many donuts I have created, so that I know what my score is.
@@ -124,7 +82,7 @@ This iteration covers project setup and starting the creation of the game. Our f
 
 - Can retrieve an Auto Clicker count.
 - Can add to the Auto Clicker count.
-- Subtract the Auto Clicker cost from your donut count.
+- Subtract the Auto Clicker cost from your donut count. (For now, make the cost a smaller number and then adjust it when it is functioning. Right now you are the only one clicking! So make it easy on yourself.)
 
 **FEATURE 3 : The cost of each Auto Clicker will go up with each purchase.**
  > As a game designer, I want the game to become more difficult as the game progresses, so that users will continue to play the game.
@@ -254,3 +212,43 @@ This iteration is for you to individualize your project. Use JavaScript to chang
 
 **STRETCH FEATURE 4 : Adapt the requirements.**
 - Document the changes to the requirements you want to do and try to bring a better balance to the game.
+
+## Index.Html Setup
+- Create a Header section
+   - Contains a navigation menu that when clicked will expand sections about:
+      - Fred the Baker Baking Company
+      - The inspiration for this game, Cookie Clicker
+      - Link to your GitHub account (and any other personal links you want to put in, such as LinkedIn)  
+Create a Main section that contains:
+- A section that handles a click
+   - Contains a button that can be clicked to make donuts.
+   - Displays the amount of Donuts made.
+- A section that interacts with the AutoClicker
+   - Displays the amount of Auto Clickers purchased.
+   - Provides a button to purchase Auto Clickers.
+   - Button is disabled when you do not have enough Donuts to buy an Auto Clicker.
+- A section that interacts with the ClickMultiplier
+   - Displays the amount of Donut Multipliers purchased.
+   - Provides a button to purchase Donut Multiplier.
+   - Button is disabled when you do not have enough Donuts to buy a Donut Multiplier.
+
+## Donut Maker Functions
+Create functions in your DonutMaker class that perform the following actions:
+
+- Adds a donut to the Donut Count for every button click
+- Returns the Donut Count
+- Purchases Auto Clickers with donuts
+- Checks whether you have enough donuts to purchase an Auto Clicker
+- Increases the count of Auto Clickers with each purchase of an Auto Clicker
+- Increases Auto Clicker cost with each purchase of an Auto Clicker
+- Activates the Auto Clicker by applying clicks every second based on the Auto Clicker count
+- Purchases Donut Multipliers with donuts
+- Checks whether you have enough donuts to purchase a Donut Multiplier
+- Increases Donut Multiplier cost with each purchase of a Donut Multiplier
+- Increases the count of Donut Multipliers with each purchase of an Donut Multiplier
+- Calculates the number of donuts earned with each click based on the count of Donut Multipliers
+- Resets the game state. This action should reset the game to zero donuts, zero Auto Clickers, and zero Donut Multipliers.
+
+## Additional Requirements
+Use semantic html and BEM when writing your html so that in the future we have a solid base to expand upon.
+Donuts are usually round, but the way in which you round your donut calculations is up to you!
