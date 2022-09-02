@@ -66,11 +66,11 @@ The number of donuts required to purchase a Donut Multiplier. Starting value is 
 ... you get the picture
 
 ## Index.Html Setup
-Create a Header section
-- Contains a navigation menu that when clicked will expand sections about:
-   - Fred the Baker Baking Company
-   - The inspiration for this game, Cookie Clicker
-   - Your contact info
+- Create a Header section
+   - Contains a navigation menu that when clicked will expand sections about:
+      - Fred the Baker Baking Company
+      - The inspiration for this game, Cookie Clicker
+      - Link to your GitHub account (and any other personal links you want to put in, such as LinkedIn)  
 Create a Main section that contains:
 - A section that handles a click
    - Contains a button that can be clicked to make donuts.
